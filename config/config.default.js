@@ -2,6 +2,8 @@
 
 'use strict';
 
+const path = require('path');
+
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -21,6 +23,16 @@ module.exports = appInfo => {
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
+    static: {
+      prefix: '/public/',
+      dir: path.join(appInfo.baseDir, 'public'),
+    },
+    vuessr: {
+      layout: path.join(appInfo.baseDir, 'app/web/view/layout.html'),
+      renderOptions: {
+        basedir: path.join(appInfo.baseDir, 'app/view'),
+      },
+    },
   };
 
   return {
