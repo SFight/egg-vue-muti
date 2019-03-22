@@ -43,3 +43,6 @@ app/view/*
 # npm install 后出现文件
 .travis.yml
 appveyor.yml
+
+# npm run dev 后出来的文件
+jsconfig.json
