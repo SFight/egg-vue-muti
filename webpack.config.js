@@ -7,6 +7,7 @@ module.exports = {
   },
   alias: {
     '~': __dirname,
+    '@': 'app/web/page/app',
     component: 'app/web/component',
     framework: 'app/web/framework',
     store: 'app/web/store',
