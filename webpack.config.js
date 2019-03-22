@@ -12,7 +12,7 @@ module.exports = {
     framework: 'app/web/framework',
     store: 'app/web/store',
   },
-  dll: ['vue', 'axios'], // webpack dll 构建
+  dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'], // webpack dll 构建
   loaders: {},
   plugins: {},
   done() { // 编译完成回调
