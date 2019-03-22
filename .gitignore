@@ -39,3 +39,7 @@ app/view/*
 !app/view/.gitkeep
 # package-lock.json
 # yarn.lock
+
+# npm install 后出现文件
+.travis.yml
+appveyor.yml
