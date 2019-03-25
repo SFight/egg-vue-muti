@@ -1,7 +1,12 @@
 import Vue from 'vue';
-// import '../filter';
+import '../filter';
 // import '../directive';
-// import '../component';
+import '../component';
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
 
 export default function render(options) {
   if (options.store && options.router) {

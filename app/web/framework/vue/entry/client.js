@@ -1,9 +1,14 @@
 import Vue from 'vue';
-// import '../filter';
+import '../filter';
 // import '../directive';
-// import '../component';
+import '../component';
 
-export default function(options) {
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
+
+export default function (options) {
   Vue.prototype.$http = require('axios');
   if (options.store) {
     // eslint-disable-next-line no-undef
