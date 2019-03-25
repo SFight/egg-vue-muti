@@ -2,24 +2,24 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-// import actions from './actions';
+import actions from './actions';
 // import getters from './getters';
-// import mutations from './mutations';
+import mutations from './mutations';
 
 Vue.use(Vuex);
 
 export default function createStore(initState = {}) {
 
   const state = {
-    // articleList: [],
+    articleList: [],
     // article: {},
     ...initState
   };
 
   return new Vuex.Store({
     state,
-    // actions,
+    actions,
     // getters,
-    // mutations
+    mutations
   });
 }

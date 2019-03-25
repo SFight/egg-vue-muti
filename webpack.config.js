@@ -13,7 +13,14 @@ module.exports = {
     store: 'app/web/store',
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'], // webpack dll 构建
-  loaders: {},
+  loaders: {
+    eslint: false,
+    css: {
+      use: ['vue-style-loader', 'css-loader'],
+      exclude: []
+    },
+    sass: true
+  },
   plugins: {},
   done() { // 编译完成回调
 
