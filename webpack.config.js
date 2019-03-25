@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   egg: true,
   framework: 'vue',
   entry: {
