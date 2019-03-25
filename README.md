@@ -1,3 +1,5 @@
+# egg-vue-muti
+egg和vue合并的前端工程
 # wqshuju
 
 文泉书局服务端和客户端
