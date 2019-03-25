@@ -46,6 +46,8 @@
     "stop": "egg-scripts stop --title=egg-server-wqshuju",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
+    "clean": "easy clean all",
+    "build": "easy build prod",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
